@@ -14,6 +14,7 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         //
+
     }
 
     /**
@@ -24,5 +25,9 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        if ($this->app->environment() == 'production') {
+            \URL::forceScheme('https');
+            \URL::forceRootUrl(\Config::get('app.url'));
+        }
     }
 }
