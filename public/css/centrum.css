@@ -1,0 +1,29 @@
+.callout a {
+    color: #495057;
+    text-decoration: none !important;
+}
+
+.file {
+    visibility: hidden;
+    position: absolute;
+}
+
+.btn-float {
+    position: absolute !important;
+    border-radius: 50% !important;
+    right: 20px;
+    bottom: 30px;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !important;
+    height: 54px;
+}
+
+.profile-img {
+    width: 100%;
+    min-width: 100%;
+}
+
+.btn-add {
+    color: #fff;
+    float: right;
+}
