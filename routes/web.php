@@ -22,9 +22,9 @@ Auth::routes(['register' => false]);
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('dataTableUser', 'UserController@dataTables')->name('dataTableUser');
-
 Route::resource('docentes', 'UserController');
 
-
+Route::get('dataTableUnits', 'UnidadeController@dataTables')->name('dataTableUnits');
 Route::resource('unidades', 'UnidadeController');
+
 Route::resource('cursos', 'CursoController');

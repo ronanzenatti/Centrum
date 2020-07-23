@@ -127,7 +127,7 @@ return [
     'classes_content_header' => '',
     'classes_content' => '',
     'classes_sidebar' => 'sidebar-dark-danger elevation-4',
-    'classes_sidebar_nav' => '',
+    'classes_sidebar_nav' => 'nav-child-indent',
     'classes_topnav' => 'navbar-dark navbar-danger',
     'classes_topnav_nav' => 'navbar-expand',
     'classes_topnav_container' => 'container',
@@ -233,7 +233,7 @@ return [
     'menu' => [
         [
             'text' => 'search',
-            'search' => true,
+            'search' => false,
             'topnav' => true,
         ],
         [
@@ -242,76 +242,57 @@ return [
             'can' => 'manage-blog',
         ],
         [
-            'text' => 'pages',
-            'url' => 'admin/pages',
-            'icon' => 'far fa-fw fa-file',
-            'label' => 4,
-            'label_color' => 'success',
+            'text' => 'Painel',
+            'url' => '/home',
+            'icon' => 'fas fa-fw fa-tachometer-alt',
+            //  'label' => 4,
+            //   'label_color' => 'success',
         ],
-        ['header' => 'account_settings'],
+        ['header' => ''],
         [
-            'text' => 'profile',
-            'url' => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
-        ],
-        [
-            'text' => 'change_password',
-            'url' => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
-        ],
-        [
-            'text' => 'multilevel',
-            'icon' => 'fas fa-fw fa-share',
+            'text' => 'Docentes',
+            'url' => 'docentes/',
+            'icon' => 'fas fa-fw fa-chalkboard-teacher',
             'submenu' => [
                 [
-                    'text' => 'level_one',
-                    'url' => '#',
+                    'text' => 'Listar',
+                    'url' => 'docentes/',
+                    'icon' => 'fas fa-fw fa-list',
                 ],
                 [
-                    'text' => 'level_one',
-                    'url' => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url' => '#',
-                        ],
-                        [
-                            'text' => 'level_two',
-                            'url' => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url' => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url' => '#',
-                                ],
-                            ],
-                        ],
-                    ],
+                    'text' => 'Cadastrar',
+                    'url' => 'docentes/create',
+                    'icon' => 'fas fa-fw fa-plus-square',
+                ],
+            ]
+        ],
+        [
+            'text' => 'Unidades',
+            'url' => 'unidades/',
+            'icon' => 'fas fa-fw fa-school',
+            'submenu' => [
+                [
+                    'text' => 'Listar',
+                    'url' => 'unidades/',
+                    'icon' => 'fas fa-fw fa-list',
                 ],
                 [
-                    'text' => 'level_one',
-                    'url' => '#',
+                    'text' => 'Cadastrar',
+                    'url' => 'unidades/create',
+                    'icon' => 'fas fa-fw fa-plus-square',
                 ],
-            ],
-        ],
-        ['header' => 'labels'],
-        [
-            'text' => 'important',
-            'icon_color' => 'red',
-            'url' => '#',
+            ]
         ],
         [
-            'text' => 'warning',
-            'icon_color' => 'yellow',
-            'url' => '#',
+            'text' => 'Cursos',
+            'icon' => 'fas fa-fw fa-graduation-cap',
+            'url' => '/cursos',
         ],
+        ['header' => ''],
         [
-            'text' => 'information',
-            'icon_color' => 'cyan',
+            'text' => 'Mudar Senha',
             'url' => '#',
+            'icon' => 'fas fa-fw fa-lock',
         ],
     ],
 
